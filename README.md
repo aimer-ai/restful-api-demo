@@ -1,4 +1,4 @@
-![](https://github.com/mali-tian/restful-api-demo/workflows/Test/badge.svg)
+![](https://github.com/aimer-ai/restful-api-demo/workflows/Test/badge.svg)
 
 # Deme of RESTful API
 
