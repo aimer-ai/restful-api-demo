@@ -25,3 +25,11 @@ Run `java -jar ./build/libs/restful-api-demo-1.0-SNAPSHOT.jar`
 #### Heartbeat
 
 `curl localhost:8080/heartbeat`
+
+
+### A web service build by spring MVC
+
+run from 'ServingWebContentApplication.java'
+
+visit localhost:8080/index.html
+click here to redirect to localhost:8080/greeting
