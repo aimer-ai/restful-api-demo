@@ -1,4 +1,4 @@
-![](https://github.com/mali-tian/design-pattern-demo/workflows/Unit%20Test/badge.svg)
+![](https://github.com/mali-tian/restful-api-demo/workflows/Test/badge.svg)
 
 # Deme of RESTful API
 
