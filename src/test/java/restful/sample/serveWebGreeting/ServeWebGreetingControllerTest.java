@@ -1,4 +1,4 @@
-package hello.greeting;
+package restful.sample.serveWebGreeting;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -17,21 +17,21 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class GreetingControllerTest {
+public class ServeWebGreetingControllerTest {
 
     @Autowired
     private MockMvc mvc;
 
     @Test
     public void shouldGetGreetingWithDefaultValue() throws Exception {
-            mvc.perform(MockMvcRequestBuilders.get("/greeting").accept(MediaType.APPLICATION_JSON))
+            mvc.perform(MockMvcRequestBuilders.get("/serveWebGreeting").accept(MediaType.APPLICATION_JSON))
             .andExpect(status().isOk())
             .andExpect(content().string(containsString("Hello, World!")));
         }
 
     @Test
     public void shouldGetGreetingWithPassedInValue() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/greeting?name=wo").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/serveWebGreeting?name=wo").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello, wo!")));
     }
