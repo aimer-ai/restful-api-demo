@@ -1,4 +1,4 @@
-package restful.sample;
+package restful;
 
 
 import java.util.Arrays;
