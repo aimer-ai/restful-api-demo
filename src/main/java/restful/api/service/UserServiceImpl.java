@@ -1,5 +1,6 @@
 package restful.api.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import restful.api.beans.User;
 import restful.api.dao.UserDao;
@@ -9,6 +10,7 @@ public class UserServiceImpl implements UserService {
 
     private UserDao userDao;
 
+    @Autowired
     public UserServiceImpl(UserDao userDao) {
         this.userDao = userDao;
     }
